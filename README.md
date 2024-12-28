@@ -1,3 +1,3 @@
-# Todo using React.jsx
+# Todo using React.js
 
 
