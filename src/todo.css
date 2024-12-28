@@ -1,0 +1,122 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.todo-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px 30px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #444;
+}
+
+input[type="text"] {
+  width: calc(100% - 120px);
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-right: 3px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button.add-task {
+  background-color: #007bff;
+  color: white;
+}
+
+button.delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+button.uppercase {
+  background-color: #27ae60;
+  color: white;
+}
+
+button.done {
+  background-color: #f39c12;
+  color: white;
+}
+
+button.mark-all {
+  background-color: #6c757d;
+  color: white;
+  margin-top: 10px;
+  width: 100%;
+}
+
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+ol li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+ol li span {
+  flex-grow: 1;
+}
+
+ol li span.done {
+  text-decoration: line-through;
+  color: #888;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+.error-alert {
+  position: fixed;
+  top: 1rem; 
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 50%; 
+  max-width: 600px; 
+  z-index: 1000; 
+  text-align: center;
+}
+
